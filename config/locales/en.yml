@@ -1,33 +1,68 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  app_name: "DnOe50RubyEcommerce"
+  number:
+    currency:
+      format:
+        unit: "$"
+        precision: 0
+        separator: "."
+        delimiter: ","
+        format: "%u%n"
+  shop: "SHOP"
+  layouts:
+    header:
+      home: "HOME"
+      car: "CAR"
+      product: "PRODUCT"
+      contact: "CONTACT"
+      introduce: "INTRODUCE"
+      search: "SEARCH"
+      login: "Login"
+      register: "Register"
+    footer:
+      overview: "OVERVIEW"
+      introducee: "introduce"
+      pay: "PAY"
+      live: "Live"
+      address: "ADDRESS"
+      address_shop: "86 Nguyen Sinh Sac, Hoa Minh, Lien Chieu, TP Da Nang"
+      Link: "LINK"
+      customercare: "Customer care"
+      Contactus: "Contact us"
+  static_pages:
+    home:
+      title: "Home"
+      buy: "Buy"
+      category: "Category"
+      dress_offices: "Dress offices"
+      party_dress: "Party dress"
+      dress: "Dress"
+    introduce:
+      title: "Introduce"
+      introducing: "Introducing the sales website system"
+      content:
+        "These days in the hustle and bustle of people's lives, taking time to go out to shop has become a luxury. Worries about unsafe traffic and restrictions
+        on traditional purchases can be overwhelming. avoidable while shopping online.
+        With online shopping, you also don't have to worry about weather conditions.
+        Consumers and customers who are organizations, companies, etc. are gradually turning to online shopping to save time.
+        Therefore, online shopping becomes more and more important and necessary, just 1 With just one click, they can get the product they want.
+        Online shopping has many advantages of being able to own everything through mouse clicks, not having to go to the place to buy.
+        After going to the sales website, choose a product, just place an order (order) and the seller will bring the product to your home. Online shopping allows you to shop whenever you want. Online stores never close, can shop 24/24 hours and 7 days a week.
+        Shopping in markets, shopping centers or stores is difficult for you to compare the characteristics and prices of products with each other. When shopping online, you can easily compare and choose the most suitable product.
+        Sometimes you run into difficult salespeople at certain sales locations. When shopping online, customers don't have to pay attention to that anymore...."
+      functions: "MAIN FUNCTIONS OF THE SYSTEM"
+      function_1: "Software to help customers shop conveniently"
+      function_2: "Personal information management"
+      function_3: "Admin can manage easily and effectively"
+    detail:
+      title: "Detail"
+      price: "PRICE:"
+      detail_content:
+        "American silk material with 2-layer sewing, slightly elastic, exalting the beauty of the body
+        design with peplum to cover the 2nd round. Product of the brand"
+      size: "Please choose the right size:"
+      size_s: "Bust 82-84, Waist 64-66, Butt 84-86 (43-47kg)"
+      size_m: "Bust 86-88, Waist 68-70, Butt 88-90 (48-53kg)"
+      size_l: "Bust 90-92, Waist 72-74, Butt 92-94 (55-58kg)"
+      size_xl: "Bust 94-96, Waist 76-78, Butt 96-98 (60-64kg)"
+      size_xxl: "Bust 98-100, Waist 80-84, Butt 100-104 (65-70kg)"

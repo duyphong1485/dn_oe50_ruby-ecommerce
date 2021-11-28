@@ -50,3 +50,7 @@ config/environments/*.local.yml
 spec/rails_helper.rb
 spec/*
 
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml

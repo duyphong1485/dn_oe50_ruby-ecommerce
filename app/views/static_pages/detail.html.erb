@@ -1,0 +1,35 @@
+<% provide :title, t(".title") %>
+<div class="row mt-5 mb-5">
+  <div class="col-2 mr-5"></div>
+  <div class="col-4 detail_img">
+    <img style="width: 380px; height: 530px"
+					class="card-img-top img-fluid hvr-grow-shadow"
+					src="assets/ao-dai-nu-ad109-mau-cam-in-hoa-tiet-lg" alt="">
+  </div>
+  <div class="col-4">
+    <h2>Dam maxi</h2>
+    <br />
+    <div>
+      <h5><%=t(".price") %>
+        <%= number_to_currency(350000) %>
+      </h5>
+    </div>
+    <br />
+    <h5><%=t("static_pages.home.category") %>: <%=t("static_pages.home.dress_offices") %></h5>
+    <div><%=t(".detail_content") %></div>
+    <div class="mt-2">
+      <h5><%=t(".size") %></h5>
+      <div>S M L XL XXL</div>
+      <div>+ Size S: <%= t ".size_s" %></div>
+      <div>+ Size M: <%= t ".size_m" %></div>
+      <div>+ Size L: <%= t ".size_l" %></div>
+      <div>+ Size XL: <%= t ".size_xl" %></div>
+      <div>+ Size XXL: <%= t ".size_xxl" %></div>
+    </div>
+    <br />
+    <div class="mt-4">
+      <%= link_to t("static_pages.home.buy"), home_path, class: "btn btn-danger mx-2 mb-2", type: "button" %>
+    </div>
+  </div>
+  <div class="col-2"></div>
+</div>
