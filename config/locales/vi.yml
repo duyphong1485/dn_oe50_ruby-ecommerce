@@ -1,0 +1,67 @@
+vi:
+  app_name: "DnOe50RubyEcommerce"
+  number:
+    currency:
+      format:
+        unit: đồng
+        precision: 0
+        separator: ","
+        delimiter: "."
+        format: "%n %u"
+  shop: "SHOP"
+  layouts:
+    header:
+      home: "TRANG CHỦ"
+      car: "GIỎ HÀNG"
+      product: "SẢN PHẨM"
+      contact: "LIÊN HỆ"
+      introduce: "GIỚI THIỆU"
+      search: "TÌM"
+      login: "Đăng nhập"
+      register: "Đăng ký"
+    footer:
+      overview: "TỔNG QUAN"
+      introducee: "Giới thiệu"
+      pay: "THANH TOÁN"
+      live: "Trực tiếp"
+      address: "ĐỊA CHỈ"
+      address_shop: "86 Nguyễn Sinh Sắc, Hòa Minh, Liên Chiểu, TP Đà Nẵng"
+      Link: "LIÊN KẾT"
+      customercare: "Chăm sóc khách hàng"
+      Contactus: "Liên hệ chúng tôi"
+  static_pages:
+    home:
+      title: "Trang chủ"
+      buy: "Mua"
+      category: "Thể loại"
+      dress_offices: "Đầm công sở"
+      party_dress: "Đầm dự tiệc"
+      dress: "Áo dài"
+    introduce:
+      title: "Giới thiệu"
+      introducing: "Giới thiệu hệ thống website bán hàng"
+      content:
+        "Ngày này trong nhịp sống hối hả của con người thì việc giành thời gian để ra ngoài để mua sắm trở nên là 1 điều quá xa sỉ..
+        Những lo lắng về giao thông không an toàn và hạn chế trong việc mua hàng truyền thống có thể tránh được trong khi mua sắm trực tuyến.
+        Với mua sắm trực tuyến(online), bạn cũng không cần phải lo lắng về điều kiện thời tiết. Người tiêu dùng và các khách hàng là những tổ chức, công ty,…
+        đang dần chuyển sang mua sắm trực tuyến nhiều hơn nhằm tiết kiệm thời gian Chính vì thế việc mua sắm online càng trở nên quan trọng và cần thiết,
+        chỉ cần 1 cú click chuột thì họ có thể có được sản phẩm mà mình mong muốn. Việc mua sắm online có nhiều ưu điểm là có thể sở hữu mọi thứ thông qua các cú click chuột chứ không cần phải đến tận nơi để mua hàng.
+        Sau khi vào website bán hàng, chọn sản phẩm, chỉ cần đặt hàng (order) người bán sẽ mang sản phẩm đến tận nhà bạn. Mua sắm online cho phép mua hàng bất cứ khi nào bạn muốn. Các cửa hàng trên mạng không bao giờ đóng cửa,
+        có thể mua sắm 24/24 giờ và 7 ngày trong tuần. Mua sắm ở các chợ, trung tâm thương mại hay cửa hàng rất khó để bạn có thể so sánh đặc điểm và giá của sản phẩm với nhau. Khi mua hàng online, bạn dễ dàng so sánh và đưa ra lựa chọn sản phẩm phù hợp nhất.
+        Đôi khi bạn gặp phải những người bán hàng khó tính tại một số địa điểm bán hàng. Mua sắm online thì khách hàng chẳng phải để ý đến chuyện ấy nữa.…."
+      functions: "CÁC CHỨC NĂNG CHÍNH CỦA HỆ THỐNG"
+      function_1: "Phần mềm giúp khách hàng mua sắm tiện lợi"
+      function_2: "Quản lí thông tin cá nhân"
+      function_3: "Admin có thể quản lí dễ dàng, hiệu quả "
+    detail:
+      title: "Chi tiết sản phẩm"
+      price: "GIÁ BÁN:"
+      detail_content: "Chất liệu lụa Mỹ có may 2 lớp, co giãn nhẹ, tôn lên nét
+        đẹp hình thể, thiết kế có peplum che được vòng 2. Sản phẩm mới của
+        thương hiệu"
+      size: "Vui lòng chọn size phù hợp:"
+      size_s: "Ngực 82-84, Eo 64-66, Mông 84-86 (43-47kg)"
+      size_m: "Ngực 86-88, Eo 68-70, Mông 88-90 (48-53kg)"
+      size_l: "Ngực 90-92, Eo 72-74, Mông 92-94 (55-58kg)"
+      size_xl: "Ngực 94-96, Eo 76-78, Mông 96-98 (60-64kg)"
+      size_xxl: "Ngực 98-100, Eo 80-84, Mông 100-104 (65-70kg)"

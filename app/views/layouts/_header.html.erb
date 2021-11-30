@@ -1,0 +1,33 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <b><%= link_to t("shop"), root_path, class: "navbar-brand", style:"font-size:22px" %></b>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+           aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ">
+          <li class="nav-item mx-2"><%= link_to t(".home"), home_path, class: "nav-link" %></li>
+          <li class="nav-item mx-2 "><%= link_to t(".car"), home_path, class: "nav-link" %></li>
+          <li class="nav-item mx-2 "><%= link_to t(".contact"), home_path, class: "nav-link" %></li>
+          <li class="nav-item mx-2 "><%= link_to t(".introduce"), introduce_path, class: "nav-link" %></li>
+        </ul>
+        <form class="d-flex" action="/user/search" method="post">
+          <input name="keywords" autocomplete="off"
+							value="" class="form-control" type="search" aria-label="Search">
+          <%= link_to t(".search"), home_path, class: "btn btn-secondary", type: "button" %>
+        </form>
+        <%= link_to t(".login"), home_path, class: "btn btn-secondary mx-2", type: "button" %>
+        <%= link_to t(".register"), home_path, class: "btn btn-secondary mx-2", type: "button" %>
+      </div>
+      <ul class="navbar-nav navbar-right">
+        <% I18n.available_locales.each do |lang| %>
+          <%= link_to lang.to_s.upcase, (request.path+"?locale=#{lang}"), class: "nav-link" %>
+          <a class="nav-link"></a>
+        <% end %>
+      </ul>
+    </div>
+  </nav>
+</header>
