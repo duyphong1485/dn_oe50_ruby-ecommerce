@@ -1,9 +1,10 @@
+@import "color";
 .center {
   text-align: center;
 }
 
 .bg-3ec {
-  background-color: #ececec;
+  background-color: $background
 }
 
 .row {
@@ -41,4 +42,19 @@
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.uneditable-input {
+  border: 1px solid $border;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.row-accounts{
+  margin-bottom:170px;
+}
+.row-login{
+  margin-bottom:300px;
+}
+.row-user{
+  margin-bottom:500px;
 }
