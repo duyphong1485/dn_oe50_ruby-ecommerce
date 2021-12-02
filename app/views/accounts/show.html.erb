@@ -1,0 +1,16 @@
+<% provide :title, t("accounts.user") %>
+  <aside class="row", style="margin-bottom:500px">
+<div class="col-1"></div>
+      <div class="col-2">
+        <%= gravatar_for @account %>
+      </div>
+      <div class="col-6">
+        <h1>
+          <%= @account.fullname %>
+        </h1>
+        <h1>
+          <%= @account.email %>
+        </h1>
+      </div>
+
+  </aside>

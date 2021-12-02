@@ -1,4 +1,4 @@
 length:
   email: 255
-  name: 50
+  fullname: 50
   password: 6
