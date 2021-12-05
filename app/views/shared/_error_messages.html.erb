@@ -1,0 +1,12 @@
+<% if @account.errors.any? %>
+  <div id="error_explanation">
+    <div class="alert alert-danger">
+      <%= t "accounts.contains_error", count: @account.errors.count %>
+    </div>
+    <ul>
+      <% @account.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
