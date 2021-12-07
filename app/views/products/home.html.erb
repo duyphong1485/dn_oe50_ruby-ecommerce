@@ -1,4 +1,4 @@
-<% provide :title, t(".title") %>
+<% provide :title, t(".title_home") %>
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -40,14 +40,10 @@
   <div class="col-5">
     <div class="row">
       <div class="col-2 mt-2">
-        <%= t(".category") %>
+        <%= t ".category" %>
       </div>
       <div class="col-6">
-        <select class="form-select" aria-label="Default select example">
-          <% @categorys.each do |category| %>
-            <option value="dress_offices"><%= link_to category.name %></option>
-          <% end %>
-        </select>
+        <%= select_tag "@categorys",  options_for_select(@categorys.each{|name, id|[ name, id]}), {:class =>"form-select"} %>
       </div>
       <div class="col-4">
         <%= link_to t("layouts.header.search"), home_path, class: "btn btn-secondary", type: "button" %>
@@ -56,26 +52,5 @@
   </div>
 </div>
 <div class="row mt-2">
-  <% @products.each do |product| %>
-    <div class="col-lg-4 col-md-6">
-      <div class="single-product">
-        <div class="product-img">
-            <%= image_tag product.image, class: "card-img" %>
-        </div>
-        <div class=" text-center">
-          <%= link_to product.name, product, class: "text-dark link" %>
-          <div class="mt-1 mb-1">
-            <%= number_to_currency(product.price) %>
-          </div>
-          <%= link_to t(".buy"), home_path, class: "btn btn-danger mx-2 mb-2", type: "button" %>
-        </div>
-      </div>
-    </div>
-  <% end %>
-  <nav aria-label="Page navigation example mt-1 paginate">
-    <ul class="pagination justify-content-center">
-      <h5><%= paginate @products %></h5>
-    </ul>
-  </nav>
-</div>
+  <%= render "home_product" %>
 </div>

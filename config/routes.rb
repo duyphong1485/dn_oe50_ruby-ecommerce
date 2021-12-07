@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root "static_pages#home"
-  get "/home", to: "static_pages#home"
+  root "products#home"
+  get "/home", to: "products#home"
   get "/introduce", to: "static_pages#introduce"
   get "/register", to: "accounts#new"
   post "/register", to: "accounts#create"

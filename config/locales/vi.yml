@@ -3,7 +3,7 @@ vi:
   activerecord: 
     errors:
       messages:
-        record_invalid: "Luu khong duoc"
+        record_invalid: "Lưu không được"
   number:
     currency:
       format:
@@ -36,13 +36,6 @@ vi:
       customercare: "Chăm sóc khách hàng"
       Contactus: "Liên hệ chúng tôi"
   static_pages:
-    home:
-      title: "Trang chủ"
-      buy: "Mua"
-      category: "Thể loại"
-      dress_offices: "Đầm công sở"
-      party_dress: "Đầm dự tiệc"
-      dress: "Áo dài"
     introduce:
       title: "Giới thiệu"
       introducing: "Giới thiệu hệ thống website bán hàng"
@@ -60,6 +53,15 @@ vi:
       function_2: "Quản lí thông tin cá nhân"
       function_3: "Admin có thể quản lí dễ dàng, hiệu quả "
   products:
+    home:
+      title_home: "Trang chủ"
+      buy: "Mua"
+      category: "Thể loại"
+      dress_offices: "Đầm công sở"
+      party_dress: "Đầm dự tiệc"
+      dress: "Áo dài"
+    home_product:
+      buy: "Mua"
     show:
       title: "Chi tiết sản phẩm"
       price: "GIÁ BÁN:"

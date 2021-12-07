@@ -32,13 +32,6 @@ en:
       customercare: "Customer care"
       Contactus: "Contact us"
   static_pages:
-    home:
-      title: "Home"
-      buy: "Buy"
-      category: "Category"
-      dress_offices: "Dress offices"
-      party_dress: "Party dress"
-      dress: "Dress"
     introduce:
       title: "Introduce"
       introducing: "Introducing the sales website system"
@@ -57,6 +50,14 @@ en:
       function_2: "Personal information management"
       function_3: "Admin can manage easily and effectively"
   products:
+    home:
+      title_home: "Home"
+      category: "Category"
+      dress_offices: "Dress offices"
+      party_dress: "Party dress"
+      dress: "Dress"
+    home_product:
+      buy: "Buy"
     show:
       title: "Detail"
       price: "PRICE:"
