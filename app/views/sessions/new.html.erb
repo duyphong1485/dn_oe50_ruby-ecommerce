@@ -3,27 +3,27 @@
   <div class="col-8 offset-2 mt-4">
     <div class="card">
       <div class="card-header">
-        <h1 style="font-size:35px"> <%= t(".Login") %> </h1>
+        <h1 class="h1_edit"> <%= t(".Login") %> </h1>
       </div>
-          <div class="card-body"> 
-            <div class="form-group">
-              <%= form_for :sessions, url: login_path do |f| %>
-                <div class="mb-3">
-                  <%= f.label :email, t("accounts.email") %> 
-                  <%= f.email_field :email,placeholder:"Email", class:"form-control mt-4 " %>
-                </div>
-                <div class="mb-3">
-                  <%= f.label :password, t("accounts.password") %>
-                  <%= f.password_field :password, placeholder:"Password", class:"form-control mt-4" %>
-                  </div>
-                <div class="card-footer text-muted">
-                  <%= f.submit t("layouts.header.login"), class: "btn btn-primary mt-4", style:"width: 100%;" %>
-                </div>
-              <% end %>
-            <p><%= t "accounts.sessions" %> <%= link_to t("layouts.header.register"), register_path %></p>
-          </div>
+      <div class="card-body">
+        <div class="form-group">
+          <%= form_for :sessions, url: login_path do |f| %>
+            <div class="mb-3">
+              <%= f.label :email, t("accounts.email") %>
+              <%= f.email_field :email,placeholder:t("accounts.email_@"), class:"form-control mt-4" %>
+            </div>
+            <div class="mb-3">
+              <%= f.label :password, t("accounts.password") %>
+              <%= f.password_field :password, placeholder:t("accounts.password"), class:"form-control mt-4" %>
+            </div>
+            <div class="card-footer text-muted">
+              <%= f.submit t("layouts.header.login"), class: "btn btn-success mt-4 width_edit" %>
+            </div>
+          <% end %>
+          <p><%= t "accounts.sessions" %> <%= link_to t("layouts.header.register"), register_path %></p>
         </div>
       </div>
-    </div>  
+    </div>
   </div>
+</div>
 </section>

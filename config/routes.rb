@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
   get "/show/:id", to: "products#show"
-  resources :accounts, only: %i(new show create)
+  resources :accounts, except: %i( index destroy )
   resources :products
 end
