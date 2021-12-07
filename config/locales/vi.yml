@@ -1,5 +1,9 @@
 vi:
   app_name: "DnOe50RubyEcommerce"
+  activerecord: 
+    errors:
+      messages:
+        record_invalid: "Lưu không được"
   number:
     currency:
       format:
@@ -32,13 +36,6 @@ vi:
       customercare: "Chăm sóc khách hàng"
       Contactus: "Liên hệ chúng tôi"
   static_pages:
-    home:
-      title: "Trang chủ"
-      buy: "Mua"
-      category: "Thể loại"
-      dress_offices: "Đầm công sở"
-      party_dress: "Đầm dự tiệc"
-      dress: "Áo dài"
     introduce:
       title: "Giới thiệu"
       introducing: "Giới thiệu hệ thống website bán hàng"
@@ -55,18 +52,31 @@ vi:
       function_1: "Phần mềm giúp khách hàng mua sắm tiện lợi"
       function_2: "Quản lí thông tin cá nhân"
       function_3: "Admin có thể quản lí dễ dàng, hiệu quả "
-    detail:
+  products:
+    home:
+      title_home: "Trang chủ"
+      buy: "Mua"
+      category: "Thể loại"
+      dress_offices: "Đầm công sở"
+      party_dress: "Đầm dự tiệc"
+      dress: "Áo dài"
+    home_product:
+      buy: "Mua"
+    show:
       title: "Chi tiết sản phẩm"
       price: "GIÁ BÁN:"
       detail_content: "Chất liệu lụa Mỹ có may 2 lớp, co giãn nhẹ, tôn lên nét
         đẹp hình thể, thiết kế có peplum che được vòng 2. Sản phẩm mới của
         thương hiệu"
-      size: "Vui lòng chọn size phù hợp:"
-      size_s: "Ngực 82-84, Eo 64-66, Mông 84-86 (43-47kg)"
-      size_m: "Ngực 86-88, Eo 68-70, Mông 88-90 (48-53kg)"
-      size_l: "Ngực 90-92, Eo 72-74, Mông 92-94 (55-58kg)"
-      size_xl: "Ngực 94-96, Eo 76-78, Mông 96-98 (60-64kg)"
-      size_xxl: "Ngực 98-100, Eo 80-84, Mông 100-104 (65-70kg)"
+      size_s_m: S M L XL XXL
+      size: "+ Vui lòng chọn đúng kích cỡ:"
+      size_s: "+ Kích cỡ S: Người có cân nặng "
+      size_m: "+ Kích cỡ M: Người có cân nặng "
+      size_l: "+ Kích cỡ L: Người có cân nặng "
+      size_xl: "+ Kích cỡ Xl: Người có cân nặng "
+      size_xxl: "+ Kích cỡ XXL: Người có cân nặng "
+  message:
+    product_not_exits: "Sản phẩm này không tồn tại"
   accounts:
     user : "Người dùng"
     success : "Đăng nhập thành công"
@@ -82,7 +92,12 @@ vi:
     create_account: "Tạo tài khoảng"
     contains_error:
         one : "Biểu mẫu chứa %{count} lỗi  "
-        other: "TBiểu mẫu chứa %{count} lỗi"
+        other: "Biểu mẫu chứa %{count} lỗi"
     sessions: "Không có tài khoảng"
     invalid : "Không hợp lệ"
     purchase_history: "Lịch sử mua hàng"
+  alert_form:
+    full_name: "Không được để trống tên"
+    email_empty: "Không được để trống Email"
+    password_empty: "Không được để trống mật khẩu"
+    password_same: "Xác nhận mật khẩu phải giống nhau"

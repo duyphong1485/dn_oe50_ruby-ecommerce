@@ -1,5 +1,5 @@
 <% provide :title, t("layouts.header.register") %>
-<section class="row" style="margin-bottom:200px">
+<section class="row-accounts">
   <div class="col-8 offset-2 mt-4">
     <div class="card">
       <div class="card-header">
@@ -9,18 +9,38 @@
           <div class="form-group">
             <%= form_for(@account) do |f| %>
               <%= render "shared/error_messages" %>
-              <%= f.label :fullname, t("accounts.fullname") %>
-              <%= f.text_field :fullname, placeholder:"Full Name", class:"form-control mt-4" %>
-              <%= f.label :email, t("accounts.email") %> 
-              <%= f.email_field :email,placeholder:"Email", class:"form-control mt-4" %>
-              <%= f.label :password, t("accounts.password") %>
-              <%= f.password_field :password, placeholder:"Password", class:"form-control mt-4"%>
-              <%= f.label :password_confirmation, t("accounts.password_confirmation")%>
-              <%= f.password_field :password_confirmation,placeholder:"Password confirmation", class:"form-control mt-4" %>
-              <div class="card-footer text-muted">
-              <%= f.submit t("accounts.create_account"), class: "btn btn-primary mt-4", style:"width: 100%;" %>
-              <% end %>
-              </div>
+                <div class="mb-3">
+                  <%= f.label :fullname, t("accounts.fullname") %>
+                  <%= f.text_field :fullname, placeholder:"Full Name", class:"form-control mt-4 is-valid" %>
+                  <div class="valid-feedback">
+                    <%= t("alert_form.full_name") %> 
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <%= f.label :email, t("accounts.email") %> 
+                  <%= f.email_field :email, placeholder:"email@example.com", class:"form-control mt-4  is-valid" %>
+                  <div class="valid-feedback">
+                    <%= t("alert_form.email_empty") %> 
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <%= f.label :password, t("accounts.password") %>
+                  <%= f.password_field :password, placeholder:"Password", class:"form-control mt-4 is-valid" %>
+                  <div class="valid-feedback">
+                    <%= t("alert_form.password_empty") %> 
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <%= f.label :password_confirmation, t("accounts.password_confirmation") %>
+                  <%= f.password_field :password_confirmation,placeholder:"Password confirmation", class:"form-control mt-4 is-valid" %>
+                  <div class="valid-feedback">
+                    <%= t("alert_form.password_same") %> 
+                  </div>
+                </div>
+                <div class="card-footer text-muted">
+                  <%= f.submit t("accounts.create_account"), class: "btn btn-primary mt-4", style:"width: 100%;" %>
+                </div>
+            <% end %>
           </div>
         </div>
       </div>

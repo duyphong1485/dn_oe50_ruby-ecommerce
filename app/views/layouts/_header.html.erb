@@ -19,22 +19,22 @@
           <%= link_to t(".search"), home_path, class: "btn btn-secondary mx-2", type: "button" %>
         </form>
           <% if logged_in %>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button"  data-bs-toggle="dropdown"  aria-expanded="false">
-            <span class="caret"> <%= t( "layouts.header.accounts") %>
-						</span>
-            </button>
-          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-            <li><a class="dropdown-item ", <%= link_to t("accounts.profile"), current_account %> ></a></li>
-            <li><a class="dropdown-item", <%= link_to t("accounts.changes_password"), "#" %> ></a></li>
-            <li><a class="dropdown-item", <%= link_to t("accounts.purchase_history"), "#" %> ></a></li>
-            <li><a class="dropdown-item", <%= link_to t("layouts.header.logout"), logout_path, method: :delete %>></a></li>
-          </ul>
-        </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"  aria-expanded="false">
+                <span class="caret"> <%= t( "layouts.header.accounts") %></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <li><%= link_to t("accounts.profile"), current_account, class:"dropdown-item" %></li>
+                <li><%= link_to t("accounts.change_password"), "#", class:"dropdown-item" %></li>
+                <li><%= link_to t("accounts.purchase_history"), "#", class:"dropdown-item" %></li> 
+                <li><hr class="dropdown-divider"></li>
+                <li><%= link_to t("layouts.header.logout"), logout_path, method: :delete, class: "dropdown-item" %></li>
+              </ul>
+            </div>
           <% else %>
-        <%= link_to t(".login"), login_path, class: "btn btn-secondary mx-2", type: "button" %>
-        <%= link_to t(".register"), register_path, class: "btn btn-secondary mx-2", type: "button" %>
-        <% end %>
+            <%= link_to t(".login"), login_path, class: "btn btn-secondary mx-2", type: "button" %>
+            <%= link_to t(".register"), register_path, class: "btn btn-secondary mx-2", type: "button" %>
+          <% end %>
       </div>
       <ul class="navbar-nav navbar-right">
         <% I18n.available_locales.each do |lang| %>

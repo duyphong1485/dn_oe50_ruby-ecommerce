@@ -1,0 +1,21 @@
+<% @products.each do |product| %>
+  <div class="col-lg-4 col-md-6">
+    <div class="single-product">
+      <div class="product-img">
+        <%= image_tag product.image, class: "card-img" %>
+      </div>
+      <div class=" text-center">
+        <%= link_to product.name, product, class: "text-dark link" %>
+        <div class="mt-1 mb-1">
+          <%= number_to_currency(product.price) %>
+        </div>
+        <%= link_to t(".buy"), home_path, class: "btn btn-danger mx-2 mb-2", type: "button" %>
+      </div>
+    </div>
+  </div>
+<% end %>
+<nav aria-label="Page navigation example mt-1 paginate">
+  <ul class="pagination justify-content-center">
+    <h5><%= paginate @products %></h5>
+  </ul>
+</nav>

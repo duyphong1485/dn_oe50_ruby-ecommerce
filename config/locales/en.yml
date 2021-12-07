@@ -32,13 +32,6 @@ en:
       customercare: "Customer care"
       Contactus: "Contact us"
   static_pages:
-    home:
-      title: "Home"
-      buy: "Buy"
-      category: "Category"
-      dress_offices: "Dress offices"
-      party_dress: "Party dress"
-      dress: "Dress"
     introduce:
       title: "Introduce"
       introducing: "Introducing the sales website system"
@@ -56,18 +49,30 @@ en:
       function_1: "Software to help customers shop conveniently"
       function_2: "Personal information management"
       function_3: "Admin can manage easily and effectively"
-    detail:
+  products:
+    home:
+      title_home: "Home"
+      category: "Category"
+      dress_offices: "Dress offices"
+      party_dress: "Party dress"
+      dress: "Dress"
+    home_product:
+      buy: "Buy"
+    show:
       title: "Detail"
       price: "PRICE:"
       detail_content:
         "American silk material with 2-layer sewing, slightly elastic, exalting the beauty of the body
         design with peplum to cover the 2nd round. Product of the brand"
-      size: "Please choose the right size:"
-      size_s: "Bust 82-84, Waist 64-66, Butt 84-86 (43-47kg)"
-      size_m: "Bust 86-88, Waist 68-70, Butt 88-90 (48-53kg)"
-      size_l: "Bust 90-92, Waist 72-74, Butt 92-94 (55-58kg)"
-      size_xl: "Bust 94-96, Waist 76-78, Butt 96-98 (60-64kg)"
-      size_xxl: "Bust 98-100, Waist 80-84, Butt 100-104 (65-70kg)"
+      size_s_m: S M L XL XXL
+      size: "+ Please choose the right size:"
+      size_s: "+ Size S: People with weight "
+      size_m: "+ Size M: People with weight "
+      size_l: "+ Size L: People with weight "
+      size_xl: "+ Size Xl: People with weight "
+      size_xxl: "+ Size XXL: People with weight "
+  message:
+    product_not_exits: "This product is not exist"
   accounts:
     user : "user"
     success : "Register success"
@@ -87,3 +92,8 @@ en:
     sessions: "Don't have accounts"
     invalid : "invalid"
     purchase_history: "Purchase history"
+  alert_form:
+    full_name: "Full Name is cannot be empty"
+    email_empty: "Email is cannot be empty"
+    password_empty: "Password is cannot be empty"
+    password_same: "Must be the same as the password"

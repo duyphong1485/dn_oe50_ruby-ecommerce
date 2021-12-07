@@ -2,3 +2,13 @@ length:
   email: 255
   fullname: 50
   password: 6
+  image: 1
+email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+page_record_medium: 6
+page_record_medium_10: 10
+size:
+  size_s: 43-47kg
+  size_m: 48-53kg
+  size_l: 55-58kg
+  size_xl: 60-64kg
+  size_xxl: 65-70kg
