@@ -7,12 +7,13 @@ class SessionsController < ApplicationController
       log_in account
       redirect_to account
     else
-      flash.now[:danger] = t "accounts.invalid"
+      flash.now[:danger] = t "accounts.loggin_failed"
       render :new
     end
   end
 
   def destroy
+    session[:cart] = nil
     log_out
     redirect_to root_url
   end
