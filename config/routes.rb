@@ -9,5 +9,13 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#destroy"
   get "/show/:id", to: "products#show"
   resources :accounts, except: %i( index destroy )
+  resources :orders, only: [:new, :create]
   resources :products
+  resources :carts, only: [:index, :create, :destroy] do
+    collection do
+      get "/add_to_cart/:id", to: "carts#add_to_cart", as: "add_to"
+      get "remove/:id", to: "carts#remove_from_cart", as: "remove_from"
+      put "update_cart/:id", to: "carts#update_cart", as: "update"
+    end
+  end
 end

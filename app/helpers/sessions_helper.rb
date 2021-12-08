@@ -1,6 +1,8 @@
 module SessionsHelper
   def log_in account
     session[:account_id] = account.id
+    session[:account_fullname] = account.fullname
+    flash[:success] = t "accounts.loggin_success"
   end
 
   def current_account

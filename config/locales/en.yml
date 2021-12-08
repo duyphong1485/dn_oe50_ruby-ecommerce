@@ -12,7 +12,7 @@ en:
   layouts:
     header:
       home: "HOME"
-      car: "CAR"
+      car: "CART"
       product: "PRODUCT"
       contact: "CONTACT"
       introduce: "INTRODUCE"
@@ -76,6 +76,8 @@ en:
     product_not_exits: "This product is not exist"
   accounts:
     user : "PROFILE"
+    loggin_success: "Loggin_success"
+    loggin_failed: "Loggin failed"
     success : "Register success"
     failed : "Register failed"
     danger: "Don't find account"
@@ -103,3 +105,20 @@ en:
     email_empty: "Email is cannot be empty"
     password_empty: "Password is cannot be empty"
     password_same: "Must be the same as the password"
+  cart:
+    cart: "Cart"
+    cart_add: "Cart Update"
+    cart_success: "Cart Successes"
+    remove_cart_success: "Remove Cart Successes"
+    remove_cart_fail: "Remove Cart Fail"
+    update_cart_success: "Update Cart Successes"
+    update_cart_fails:  "Update Cart Fail"
+    not_enough_product: "Not enogh product"
+    product_name: "Product name"
+    price: "Price"
+    quantity: "Quantity"
+    total_money: "Total"
+    remove: "Remove"
+    continue_buy: "Continue Buy"
+    total_of_money: "Total of money"
+    pay: "Payment"
