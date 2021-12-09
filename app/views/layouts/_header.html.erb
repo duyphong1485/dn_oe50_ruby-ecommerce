@@ -18,7 +18,7 @@
           <input name="keywords" autocomplete="off" value="" class="form-control" type="search" aria-label="Search">
           <%= link_to t(".search"), home_path, class: "btn btn-secondary mx-2", type: "button" %>
         </form>
-          <% if logged_in %>
+          <% if logged_in? %>
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"  aria-expanded="false">
                 <span class="caret"> <%= t( "layouts.header.accounts") %></span>
@@ -26,6 +26,7 @@
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                 <li><%= link_to t("accounts.profile"), current_account, class:"dropdown-item" %></li>
                 <li><%= link_to t("accounts.change_password"), "#", class:"dropdown-item" %></li>
+                <li><%= link_to t("accounts.edits"), edit_account_path(current_account), class:"dropdown-item" %></li>
                 <li><%= link_to t("accounts.purchase_history"), "#", class:"dropdown-item" %></li> 
                 <li><hr class="dropdown-divider"></li>
                 <li><%= link_to t("layouts.header.logout"), logout_path, method: :delete, class: "dropdown-item" %></li>

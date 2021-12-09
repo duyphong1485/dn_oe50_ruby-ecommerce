@@ -21,6 +21,7 @@ en:
       logout: "LOGOUT"
       register: "REGISTER"
       accounts: "ACCOUNTS"
+      edits: "EDITS PROFILE"
     footer:
       overview: "OVERVIEW"
       introducee: "introduce"
@@ -74,7 +75,7 @@ en:
   message:
     product_not_exits: "This product is not exist"
   accounts:
-    user : "user"
+    user : "PROFILE"
     success : "Register success"
     failed : "Register failed"
     danger: "Don't find account"
@@ -83,7 +84,10 @@ en:
     change_password: "Change Password"
     profile: "Profile"
     email: "Email"
+    email_@: email@example.com
     settings: "Settings"
+    edits: "Edit profile"
+    reset: "RESET"
     password_confirmation: "Password Confirmation"
     create_account: "Create Account"
     contains_error:
@@ -92,6 +96,8 @@ en:
     sessions: "Don't have accounts"
     invalid : "invalid"
     purchase_history: "Purchase history"
+  account_updated_html: "Information of account %{accountname} has been updated successfully"
+  login_first: "Please login first"
   alert_form:
     full_name: "Full Name is cannot be empty"
     email_empty: "Email is cannot be empty"
