@@ -1,0 +1,31 @@
+<% provide :title, t("layouts.header.edits") %>
+<section class="row-login">
+  <div class="col-8 offset-2 mt-4">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="h1_edit"> <%= t("accounts.edits") %> </h1>
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <%= form_for @account do |f| %>
+            <div class="mb-3">
+              <%= f.label :email, t("accounts.email") %>
+              <%= f.email_field :email,placeholder:t("accounts.email_@"), class:"form-control mt-4" %>
+            </div>
+            <div class="mb-3">
+              <%= f.label :fullname, t("accounts.fullname") %>
+              <%= f.text_field :fullname, placeholder:t("accounts.fullname"), class:"form-control mt-4 is-valid" %>
+            </div>
+            <div class="card-footer text-muted">
+              <div class="row">
+                <%= button_tag t("accounts.reset"), type:"reset", class: "btn btn-danger col-sm-5" %>
+                <div class="col-sm-2"></div>
+                <%= f.submit t("layouts.header.edits"), class: "btn btn-success col-sm-5" %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

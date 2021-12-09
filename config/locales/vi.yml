@@ -24,7 +24,8 @@ vi:
       login: "ĐĂNG NHẬP"
       logout: "ĐĂNG XUẤT"
       register: "ĐĂNG KÍ"
-      account: "TÀI KHOẢNG"
+      account: "TÀI KHOẢN"
+      edits: "CHỈNH SỬA HỒ SƠ"
     footer:
       overview: "TỔNG QUAN"
       introducee: "Giới thiệu"
@@ -78,24 +79,29 @@ vi:
   message:
     product_not_exits: "Sản phẩm này không tồn tại"
   accounts:
-    user : "Người dùng"
+    user : "HỒ SƠ"
     success : "Đăng nhập thành công"
     failed : "Đăng nhập không thành công"
-    danger: "Không tìm thấy tài khoảng"
+    danger: "Không tìm thấy tài khoản"
     fullname: "Họ và tên"
     password: "Mật khẩu"
     change_password: "Đổi Mật Khẩu"
     profile: "Hồ sơ"
     email: "Email"
+    email_@: email@example.com
     settings: "Cài đặt"
+    edits: "Chỉnh sửa hồ sơ"
+    reset: "PHỤC HỒI MẶC ĐỊNH"
     password_confirmation: "Xác nhận mật khẩu"
-    create_account: "Tạo tài khoảng"
+    create_account: "Tạo tài khoản"
     contains_error:
         one : "Biểu mẫu chứa %{count} lỗi  "
         other: "Biểu mẫu chứa %{count} lỗi"
-    sessions: "Không có tài khoảng"
+    sessions: "Không có tài khoản"
     invalid : "Không hợp lệ"
     purchase_history: "Lịch sử mua hàng"
+  account_updated_html: "Thông tin người dùng %{accountname} đã được cập nhật thành công"
+  login_first: "Vui lòng đăng nhập"
   alert_form:
     full_name: "Không được để trống tên"
     email_empty: "Không được để trống Email"
