@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   get "/show/:id", to: "products#show"
   resources :accounts, except: %i( index destroy )
   resources :products
+  namespace :admin do
+    root "static_pages#index"
+  end
 end
