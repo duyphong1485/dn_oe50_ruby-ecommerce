@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
     account = Account.find_by email: params[:sessions][:email].downcase
     if account&.authenticate params[:sessions][:password]
       log_in account
+      remember account
       redirect_to account
     else
       flash.now[:danger] = t "accounts.loggin_failed"

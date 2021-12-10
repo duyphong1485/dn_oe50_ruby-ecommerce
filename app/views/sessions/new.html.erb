@@ -19,6 +19,12 @@
             <div class="card-footer text-muted">
               <%= f.submit t("layouts.header.login"), class: "btn btn-success mt-4 width_edit" %>
             </div>
+            <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Default checkbox
+  </label>
+</div>
           <% end %>
           <p><%= t "accounts.sessions" %> <%= link_to t("layouts.header.register"), register_path %></p>
         </div>

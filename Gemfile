@@ -3,7 +3,7 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.7.0"
 
-gem "bcrypt", "3.1.16"
+gem "bcrypt", "~> 3.1", ">= 3.1.16"
 
 gem "bootstrap-kaminari-views", "~>0.0.5"
 
