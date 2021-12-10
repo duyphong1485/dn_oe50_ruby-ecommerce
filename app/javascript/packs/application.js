@@ -9,7 +9,8 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 window.bootstrap = require("bootstrap");
 import "../stylesheets/application.scss";
-
+require('bootstrap-icons/font/bootstrap-icons.css');
+require('jquery')
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()

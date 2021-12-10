@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title><%= full_title yield :title %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
+    <%= javascript_pack_tag "scripts" %> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <%= render "admin/layouts/header_admin" %>
+    <div id="layoutSidenav">
+      <%= render "admin/layouts/nav_admin" %>
+      <%= yield %>
+    </div>
+  </body>
+</html>

@@ -19,6 +19,12 @@
             <div class="card-footer text-muted">
               <%= f.submit t("layouts.header.login"), class: "btn btn-success mt-4 width_edit" %>
             </div>
+            <div class="form-check mb-3 mt-2">
+              <%= f.label :remember_me do %>
+                <%= f.check_box :remember_me%>
+                <%= content_tag(:span, t("accounts.sessions.remember_me")) %>
+              <% end %>
+            </div>
           <% end %>
           <p><%= t "accounts.sessions" %> <%= link_to t("layouts.header.register"), register_path %></p>
         </div>

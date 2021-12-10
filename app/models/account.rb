@@ -1,4 +1,5 @@
 class Account < ApplicationRecord
+  attr_accessor :remember_token
   has_many :oders, dependent: :destroy
   has_many :addresses, dependent: :destroy
   before_save{email.downcase!}
@@ -12,6 +13,20 @@ class Account < ApplicationRecord
                       length: {minimum: Settings.length.password}, allow_nil: true
 
   has_secure_password
+
+  def remember
+    self.remember_token = Account.new_token
+    update_column :remember_digest, Account.digest(remember_token)
+  end
+
+  def authenticated? remember_token
+    BCrypt::Password.new(remember_digest).is_password? remember_token
+  end
+
+  def forget
+    update_column :remember_digest, nil
+  end
+
   class << self
     def digest string
       cost = if ActiveModel::SecurePassword.min_cost
@@ -20,6 +35,10 @@ class Account < ApplicationRecord
                BCrypt::Engine.cost
              end
       BCrypt::Password.create string, cost: cost
+    end
+
+    def new_token
+      SecureRandom.urlsafe_base64
     end
   end
 end

@@ -9,8 +9,8 @@
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="nav navbar-nav ">
-          <li class="nav-item mx-2"><%= link_to t(".home"), home_path, class: "nav-link" %></li>
-          <li class="nav-item mx-2 "><%= link_to t(".car"), home_path, class: "nav-link" %></li>
+          <li class="nav-item mx-2 "><%= link_to t(".home"), home_path, class: "nav-link bi bi-house-fill mp-2" %></li>
+          <li class="nav-item mx-2 "><%= link_to t(".car"), carts_path, class: "nav-link" %></li>
           <li class="nav-item mx-2 "><%= link_to t(".contact"), home_path, class: "nav-link" %></li>
           <li class="nav-item mx-2 "><%= link_to t(".introduce"), introduce_path, class: "nav-link" %></li>
         </ul>
@@ -21,7 +21,8 @@
           <% if logged_in? %>
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"  aria-expanded="false">
-                <span class="caret"> <%= t( "layouts.header.accounts") %></span>
+                <span><i class="bi bi-person-circle"></i></span>  
+                <span class="caret"> <%= (session[:account_fullname]) %></span>
               </button>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                 <li><%= link_to t("accounts.profile"), current_account, class:"dropdown-item" %></li>
