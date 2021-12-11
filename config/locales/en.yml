@@ -105,6 +105,8 @@ en:
     email_empty: "Email is cannot be empty"
     password_empty: "Password is cannot be empty"
     password_same: "Must be the same as the password"
+  sessions: 
+    remember_me: "Remember me"
   cart:
     cart: "Cart"
     cart_add: "Cart Update"

@@ -16,7 +16,7 @@ class Account < ApplicationRecord
 
   def remember
     self.remember_token = Account.new_token
-    update_attribute :remember_token, Account.digest(remember_token)
+    update_column :remember_digest, Account.digest(remember_token)
   end
 
   def authenticated? remember_token
@@ -24,7 +24,7 @@ class Account < ApplicationRecord
   end
 
   def forget
-    update_attribute :remember_digest, nil
+    update_column :remember_digest, nil
   end
 
   class << self

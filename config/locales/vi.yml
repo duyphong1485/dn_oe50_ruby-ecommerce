@@ -107,6 +107,8 @@ vi:
     email_empty: "Không được để trống Email"
     password_empty: "Không được để trống mật khẩu"
     password_same: "Xác nhận mật khẩu phải giống nhau"
+  sessions: 
+    remember_me: "Ghi nhớ đăng nhập"
   cart:
     cart: "Giỏ hàng"
     cart_add: "Thêm vào giỏ hàng"
