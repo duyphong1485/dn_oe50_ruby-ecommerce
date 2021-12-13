@@ -20,7 +20,7 @@ en:
       login: "LOGIN"
       logout: "LOGOUT"
       register: "REGISTER"
-      accounts: "ACCOUNTS"
+      account: "ACCOUNTS"
       edits: "EDITS PROFILE"
     footer:
       overview: "OVERVIEW"
@@ -91,8 +91,8 @@ en:
     password_confirmation: "Password Confirmation"
     create_account: "Create Account"
     contains_error:
-        one : "The form contains %{count} erors"
-        other: "The form contains %{count} errors"
+      one : "The form contains %{count} erors"
+      other: "The form contains %{count} errors"
     sessions: "Don't have accounts"
     invalid : "invalid"
     purchase_history: "Purchase history"
@@ -103,3 +103,18 @@ en:
     email_empty: "Email is cannot be empty"
     password_empty: "Password is cannot be empty"
     password_same: "Must be the same as the password"
+  admin:
+    layouts:
+      admin: "ADMIN"
+      statistical: "Statistical"
+      manage: "MANAGE"
+      accounts: "Accounts"
+      add_account: "Add account"
+      account_list: "Account list"
+      items: "Items"
+      add_categories: "Add categories"
+      category_list: "Category list"
+      products: "Products"
+      add_product: "Add product"
+      product_list: "Product list"
+      orders_list: "Orders list"
