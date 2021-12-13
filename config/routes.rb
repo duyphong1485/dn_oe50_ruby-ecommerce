@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#destroy"
   get "/show/:id", to: "products#show"
   resources :accounts, except: %i( index destroy )
-  resources :orders, only: [:new, :create]
+  resources :oders, only: [:new, :create]
   resources :products
   resources :carts, only: [:index, :create, :destroy] do
     collection do

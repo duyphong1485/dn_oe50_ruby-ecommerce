@@ -14,11 +14,14 @@ end
   priceProduct = n*12300
   create_date_Product="2021-12-10"
   quantityProduct = n*10
+  residual = n*10
   Product.create!(
     category_id: category_idProduct,
     name: nameProduct,
     image: imageProduct,
     price: priceProduct,
     create_date: create_date_Product,
-    quantity: quantityProduct)
+    quantity: quantityProduct,
+    residual: residual
+    )
 end

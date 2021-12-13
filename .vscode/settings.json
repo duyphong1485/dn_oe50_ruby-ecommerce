@@ -1,3 +1,13 @@
 {
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs":"active",	
+      "key": "shift+alt+right",
+      "command": "bracket-pair-colorizer.expandBracketSelection",
+      "when": "editorTextFocus",
+      "key": "shift+alt+left",
+      "command": "bracket-pair-colorizer.undoBracketSelection",
+      "when": "editorTextFocus"
+    
+
 }

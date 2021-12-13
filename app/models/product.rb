@@ -7,6 +7,6 @@ class Product < ApplicationRecord
   delegate :name, to: :category, prefix: true
 
   def check_residual_quantity? quantity_params
-    quantity_params.positive?
+    quantity_params.positive? && residual >= quantity_params
   end
 end
